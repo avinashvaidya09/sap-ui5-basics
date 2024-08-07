@@ -4,15 +4,7 @@
     
     <Page id="page" title="{i18n>title}" titleAlignment="Center">
         <content>
-            <Panel id="mainPanel" headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
-                <content>
-                    <HBox id="sayHello">
-                        <Input id="sayHelloInput" value="{/recepient/name}" valueLiveUpdate="true" width="90%"></Input>
-                        <Button id="sayHelloButton" text="{i18n>showHelloButtonText}" press="onPress" class="sapUiSmallMarginEnd"></Button>
-                    </HBox>
-                </content>
-            </Panel>
-            
+           <mvc:XMLView id="helloPanelViewId" viewName="com.learn.ui5.sapui5basics.view.HelloPanel"/>
         </content>
     </Page>
 

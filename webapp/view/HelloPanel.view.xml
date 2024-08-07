@@ -1,0 +1,12 @@
+<mvc:View controllerName="com.learn.ui5.sapui5basics.controller.HelloPanel"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+            <Panel id="helloPanel" headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
+                <content>
+                    <HBox id="sayHello">
+                        <Input id="sayHelloInput" value="{/recepient/name}" valueLiveUpdate="true" width="90%"></Input>
+                        <Button id="sayHelloButton" text="{i18n>showHelloButtonText}" press="onPress" class="sapUiSmallMarginEnd"></Button>
+                    </HBox>
+                </content>
+            </Panel>
+</mvc:View>
