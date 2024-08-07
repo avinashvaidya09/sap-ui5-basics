@@ -1,0 +1,12 @@
+<mvc:View controllerName="com.learn.ui5.sapui5basics.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox id="sayHello">
+                <Input id="sayHelloInput" value="{/recepient/name}" valueLiveUpdate="true" width="50%"></Input>
+                <Button id="sayHelloButton" text="{i18n>showHelloButtonText}" press="onPress"></Button>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
