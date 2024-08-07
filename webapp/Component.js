@@ -3,9 +3,10 @@
  */
 sap.ui.define([
     "sap/ui/core/UIComponent",
-    "com/learn/ui5/sapui5basics/model/models"
+    "com/learn/ui5/sapui5basics/model/models",
+    "sap/ui/model/json/JSONModel"
 ],
-    function (UIComponent, models) {
+    function (UIComponent, models, JSONModel) {
         "use strict";
 
         return UIComponent.extend("com.learn.ui5.sapui5basics.Component", {
@@ -28,8 +29,21 @@ sap.ui.define([
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
 
+                //  Set the data model on the view
+                var oData = {
+                    recepient: {
+                        name: "UI5"
+                    }
+                };
 
+                var oModel = new JSONModel(oData);
+                this.setModel(oModel);
+            },
+
+            destroy: function() {
+                UIComponent.prototype.destroy.apply(this, arguments);
             }
+
         });
     }
 );
