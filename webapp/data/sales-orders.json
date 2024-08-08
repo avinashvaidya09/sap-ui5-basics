@@ -1,0 +1,220 @@
+{
+    "SalesOrders": [
+      {
+        "OrderNumber": "SO1001",
+        "TotalPrice": 2399.95,
+        "DeliveryDate": "2023-08-10T00:00:00",
+        "Status": "Shipped",
+        "OrderItems": [
+          {
+            "ProductName": "Smartphone",
+            "Brand": "Apple",
+            "Quantity": 2,
+            "Price": 799.99,
+            "InStock": 20
+          },
+          {
+            "ProductName": "Smartwatch",
+            "Brand": "Samsung",
+            "Quantity": 3,
+            "Price": 199.99,
+            "InStock": 15
+          },
+          {
+            "ProductName": "Bluetooth Speaker",
+            "Brand": "JBL",
+            "Quantity": 1,
+            "Price": 89.99,
+            "InStock": 50
+          },
+          {
+            "ProductName": "Tablet",
+            "Brand": "Google",
+            "Quantity": 1,
+            "Price": 499.99,
+            "InStock": 30
+          },
+          {
+            "ProductName": "Headphones",
+            "Brand": "Sony",
+            "Quantity": 1,
+            "Price": 149.99,
+            "InStock": 25
+          }
+        ]
+      },
+      {
+        "OrderNumber": "SO1002",
+        "TotalPrice": 1349.97,
+        "DeliveryDate": "2023-08-12T00:00:00",
+        "Status": "Pending",
+        "OrderItems": [
+          {
+            "ProductName": "Laptop",
+            "Brand": "Dell",
+            "Quantity": 1,
+            "Price": 1200.00,
+            "InStock": 10
+          },
+          {
+            "ProductName": "Wireless Earbuds",
+            "Brand": "Apple",
+            "Quantity": 2,
+            "Price": 159.99,
+            "InStock": 40
+          },
+          {
+            "ProductName": "Smartwatch",
+            "Brand": "Samsung",
+            "Quantity": 1,
+            "Price": 199.99,
+            "InStock": 15
+          },
+          {
+            "ProductName": "Camera",
+            "Brand": "Canon",
+            "Quantity": 1,
+            "Price": 699.99,
+            "InStock": 5
+          },
+          {
+            "ProductName": "Smartphone",
+            "Brand": "Apple",
+            "Quantity": 1,
+            "Price": 799.99,
+            "InStock": 20
+          }
+        ]
+      },
+      {
+        "OrderNumber": "SO1003",
+        "TotalPrice": 1449.95,
+        "DeliveryDate": "2023-08-15T00:00:00",
+        "Status": "Delivered",
+        "OrderItems": [
+          {
+            "ProductName": "Smartwatch",
+            "Brand": "Apple",
+            "Quantity": 2,
+            "Price": 199.99,
+            "InStock": 15
+          },
+          {
+            "ProductName": "Bluetooth Speaker",
+            "Brand": "Bose",
+            "Quantity": 1,
+            "Price": 129.99,
+            "InStock": 25
+          },
+          {
+            "ProductName": "Tablet",
+            "Brand": "Apple",
+            "Quantity": 1,
+            "Price": 499.99,
+            "InStock": 30
+          },
+          {
+            "ProductName": "Headphones",
+            "Brand": "Bose",
+            "Quantity": 1,
+            "Price": 299.99,
+            "InStock": 20
+          },
+          {
+            "ProductName": "Camera",
+            "Brand": "Nikon",
+            "Quantity": 1,
+            "Price": 599.99,
+            "InStock": 10
+          }
+        ]
+      },
+      {
+        "OrderNumber": "SO1004",
+        "TotalPrice": 749.95,
+        "DeliveryDate": "2023-08-18T00:00:00",
+        "Status": "In Progress",
+        "OrderItems": [
+          {
+            "ProductName": "Smartphone",
+            "Brand": "Google",
+            "Quantity": 1,
+            "Price": 699.99,
+            "InStock": 20
+          },
+          {
+            "ProductName": "Smartwatch",
+            "Brand": "Fitbit",
+            "Quantity": 1,
+            "Price": 249.99,
+            "InStock": 15
+          },
+          {
+            "ProductName": "Bluetooth Speaker",
+            "Brand": "Sony",
+            "Quantity": 1,
+            "Price": 89.99,
+            "InStock": 50
+          },
+          {
+            "ProductName": "Tablet",
+            "Brand": "Samsung",
+            "Quantity": 1,
+            "Price": 499.99,
+            "InStock": 30
+          },
+          {
+            "ProductName": "Headphones",
+            "Brand": "Sennheiser",
+            "Quantity": 1,
+            "Price": 149.99,
+            "InStock": 25
+          }
+        ]
+      },
+      {
+        "OrderNumber": "SO1005",
+        "TotalPrice": 1099.95,
+        "DeliveryDate": "2023-08-20T00:00:00",
+        "Status": "Cancelled",
+        "OrderItems": [
+          {
+            "ProductName": "Laptop",
+            "Brand": "HP",
+            "Quantity": 1,
+            "Price": 1000.00,
+            "InStock": 15
+          },
+          {
+            "ProductName": "Wireless Earbuds",
+            "Brand": "Samsung",
+            "Quantity": 2,
+            "Price": 129.99,
+            "InStock": 40
+          },
+          {
+            "ProductName": "Smartwatch",
+            "Brand": "Garmin",
+            "Quantity": 1,
+            "Price": 299.99,
+            "InStock": 20
+          },
+          {
+            "ProductName": "Smartphone",
+            "Brand": "Sony",
+            "Quantity": 1,
+            "Price": 699.99,
+            "InStock": 20
+          },
+          {
+            "ProductName": "Headphones",
+            "Brand": "JBL",
+            "Quantity": 1,
+            "Price": 149.99,
+            "InStock": 25
+          }
+        ]
+      }
+    ]
+  }
+  
