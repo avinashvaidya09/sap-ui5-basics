@@ -4,6 +4,7 @@
     <Dialog id="helloDialog" title="{i18n>helloDialogTitle}" titleAlignment="Center">
         <content>
             <Text id="helloDialogText" text="{i18n>helloDialogText}" class="sapUiTinyMargin"/>
+            <core:Icon id="helloDialogTextIcon" src="sap-icon://hello-world" size="5rem" class="sapUiMediumMargin"></core:Icon>
         </content>
         <buttons>
             <Button id="helloDialogCloseButton" text="{i18n>closeButtonText}" press="onCloseDialog" />

@@ -6,7 +6,7 @@
                     <HBox id="sayHello">
                         <Input id="sayHelloInput" value="{/recepient/name}" valueLiveUpdate="true" width="90%"></Input>
                         <Button id="sayHelloButton" text="{i18n>showHelloButtonText}" press="onPress" class="sapUiSmallMarginEnd"></Button>
-                        <Button id="helloDialogButton" text="{i18n>helloDialogButtonText}" press="onOpenDialog" class="sapUiSmallMarginEnd"></Button>
+                        <Button id="helloDialogButton" text="{i18n>helloDialogButtonText}" press="onOpenDialog" class="sapUiSmallMarginEnd" icon="sap-icon://world"></Button>
                     </HBox>
                 </content>
             </Panel>
