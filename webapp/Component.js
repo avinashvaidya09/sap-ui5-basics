@@ -4,9 +4,10 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
     "com/learn/ui5/sapui5basics/model/models",
-    "sap/ui/model/json/JSONModel"
+    "sap/ui/model/json/JSONModel",
+    "./controller/HelloDialog"
 ],
-    function (UIComponent, models, JSONModel) {
+    function (UIComponent, models, JSONModel, HelloDialog) {
         "use strict";
 
         return UIComponent.extend("com.learn.ui5.sapui5basics.Component", {
@@ -38,10 +39,20 @@ sap.ui.define([
 
                 var oModel = new JSONModel(oData);
                 this.setModel(oModel);
+
+                // Set Dialog
+                this._helloDialog = new HelloDialog(this.getRootControl());
             },
 
             destroy: function() {
                 UIComponent.prototype.destroy.apply(this, arguments);
+            },
+            openHelloDialog: function (sviewName) {
+                this._helloDialog.open(sviewName);
+            },
+            exit: function () {
+                this._helloDialog.destroy();
+                delete this._helloDialog;
             }
 
         });
