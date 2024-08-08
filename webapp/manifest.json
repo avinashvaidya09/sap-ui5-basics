@@ -57,6 +57,10 @@
         "settings": {
           "bundleName": "com.learn.ui5.sapui5basics.i18n.i18n"
         }
+      },
+      "invoice": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "data/invoices.json"
       }
     },
     "resources": {
