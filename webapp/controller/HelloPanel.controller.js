@@ -28,7 +28,6 @@ sap.ui.define([
                 // Create dialog lazily
                 if (!this.byId("helloDialog")) {
                     // Load the fragment definition and add it to the view
-                    // Load the fragment definition and add it to the view
                     var oDialog = sap.ui.xmlfragment(oView.getId(), "com.learn.ui5.sapui5basics.view.fragment.HelloDialog", this);
                     oView.addDependent(oDialog);
                     oDialog.open();
