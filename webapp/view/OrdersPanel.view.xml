@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.learn.ui5.sapui5basics.controller.OrdersPanel"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+            <Panel id="ordersPanel" headerText="{i18n>ordersPanelTitle}" class="sapUiResponsiveMargin" width="auto">
+                <content>
+                    <List id="ordersListView" 
+                        headerText="{i18n>ordersListTitle}"
+                        class="saUiResponsiveMargin"
+                        width="auto"
+                        items="{salesOrders>/SalesOrders}">
+                        <items>
+                            <ObjectListItem id="ordersListItemView" title="{salesOrders>OrderNumber}"></ObjectListItem>                        
+                        </items>
+                    </List>
+                </content>
+            </Panel>
+</mvc:View>

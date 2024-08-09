@@ -4,12 +4,15 @@
     
     <Page id="page" title="{i18n>title}" titleAlignment="Center">
         <content>
-           <mvc:XMLView id="helloPanelViewId" viewName="com.learn.ui5.sapui5basics.view.HelloPanel"/>
+           <mvc:XMLView id="helloPanelView" viewName="com.learn.ui5.sapui5basics.view.HelloPanel"/>
         </content>
         <content>
-            <Panel id="reuseDialogPanel" headerText="{i18n>reusableComponentPanel}" class="sapUiResponsiveMargin" width="auto">
+            <Panel id="reuseDialogPanelView" headerText="{i18n>reusableComponentPanel}" class="sapUiResponsiveMargin" width="auto">
                 <Button id="mainViewReuseDialogButton" class="sapUiSmallMarginEnd" text="{i18n>reuseDialogButton}" press="onOpenDialog" icon="sap-icon://world"></Button>
             </Panel>
+        </content>
+        <content>
+           <mvc:XMLView id="ordersPanelView" viewName="com.learn.ui5.sapui5basics.view.OrdersPanel"/>
         </content>
     </Page>
 
