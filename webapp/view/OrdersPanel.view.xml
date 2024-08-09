@@ -3,11 +3,18 @@
     xmlns="sap.m">
             <Panel id="ordersPanel" headerText="{i18n>ordersPanelTitle}" class="sapUiResponsiveMargin" width="auto">
                 <content>
-                    <List id="ordersListView" 
+                    <List id="ordersList" 
                         headerText="{i18n>ordersListTitle}"
                         class="saUiResponsiveMargin"
                         width="auto"
                         items="{salesOrder>/SalesOrders}">
+                        <headerToolbar>
+                            <Toolbar id="ordersToolBar">
+                                <Title id="ordersToolBarTitle" text="{i18n>ordersListTitle}"/>
+                                <ToolbarSpacer id="ordersToolBarSpacer"/>
+                                <SearchField id="ordersSearchField" width="50%" search=".onFilterSalesOrders" ></SearchField>
+                            </Toolbar>
+                        </headerToolbar>
                         <items>
                             <ObjectListItem id="ordersListItemView" 
                                 title="{salesOrder>OrderNumber}"
