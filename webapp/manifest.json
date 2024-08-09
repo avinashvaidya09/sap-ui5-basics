@@ -58,7 +58,7 @@
           "bundleName": "com.learn.ui5.sapui5basics.i18n.i18n"
         }
       },
-      "salesOrders": {
+      "salesOrder": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "data/sales-orders.json"
       }

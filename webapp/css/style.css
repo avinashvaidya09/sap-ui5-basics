@@ -1,1 +1,11 @@
 /* Enter your custom styles here */
+.customObjectListItem .sapMObjLTitleDiv,
+.customObjectListItem .sapMObjLNumberDiv {
+    margin-right: 2%; /* Adjust this value as needed */
+    display: inline-block;
+    align-items: center
+}
+
+.customObjectListItem .sapMObjLNumberDiv {
+    margin-left: 0; /* Remove default left margin */
+}

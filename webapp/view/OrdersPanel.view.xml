@@ -7,9 +7,20 @@
                         headerText="{i18n>ordersListTitle}"
                         class="saUiResponsiveMargin"
                         width="auto"
-                        items="{salesOrders>/SalesOrders}">
+                        items="{salesOrder>/SalesOrders}">
                         <items>
-                            <ObjectListItem id="ordersListItemView" title="{salesOrders>OrderNumber}"></ObjectListItem>                        
+                            <ObjectListItem id="ordersListItemView" 
+                                title="{salesOrder>OrderNumber}"
+                                numberUnit="{view>/currency}"
+                                number="{
+                                    parts: [{path: 'salesOrder>TotalPrice'}, {path: 'view>/currency'}],
+                                    type: 'sap.ui.model.type.Currency',
+                                    formatOptions: {
+                                        showMeasure: false
+                                    }
+                                }"
+                                class="customObjectListItem">
+                            </ObjectListItem>                        
                         </items>
                     </List>
                 </content>
