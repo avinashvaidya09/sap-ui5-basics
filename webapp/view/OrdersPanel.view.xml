@@ -7,7 +7,12 @@
                         headerText="{i18n>ordersListTitle}"
                         class="saUiResponsiveMargin"
                         width="auto"
-                        items="{salesOrder>/SalesOrders}">
+                        items="{
+                            path: 'salesOrder>/SalesOrders',
+                            sorter: {
+                                path: 'OrderNumber'
+                            }
+                        }">
                         <headerToolbar>
                             <Toolbar id="ordersToolBar">
                                 <Title id="ordersToolBarTitle" text="{i18n>ordersListTitle}"/>
@@ -16,7 +21,7 @@
                             </Toolbar>
                         </headerToolbar>
                         <items>
-                            <ObjectListItem id="ordersListItemView" 
+                            <ObjectListItem id="ordersListItem" 
                                 title="{salesOrder>OrderNumber}"
                                 numberUnit="{view>/currency}"
                                 number="{
@@ -29,7 +34,7 @@
                                 numberState="{= ${salesOrder>TotalPrice} > 1000 ? 'Error' : 'Success'}"
                                 class="customObjectListItem">
                                 <firstStatus>
-                                    <ObjectStatus id="orderObjectStatusView" text="{ path: 'salesOrder>Status', formatter: '.formatter.translateStatusText' }"/>
+                                    <ObjectStatus id="orderObjectStatus" text="{ path: 'salesOrder>Status', formatter: '.formatter.translateStatusText' }"/>
                                 </firstStatus>
                             </ObjectListItem>                        
                         </items>
