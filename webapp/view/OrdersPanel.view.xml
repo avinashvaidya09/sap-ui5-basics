@@ -19,6 +19,7 @@
                                         showMeasure: false
                                     }
                                 }"
+                                numberState="{= ${salesOrder>TotalPrice} > 1000 ? 'Error' : 'Success'}"
                                 class="customObjectListItem">
                             </ObjectListItem>                        
                         </items>
