@@ -4,7 +4,7 @@
         "OrderNumber": "SO1001",
         "TotalPrice": 2399.95,
         "DeliveryDate": "2023-08-10T00:00:00",
-        "Status": "Shipped",
+        "Status": "SHP",
         "OrderItems": [
           {
             "ProductName": "Smartphone",
@@ -47,7 +47,7 @@
         "OrderNumber": "SO1002",
         "TotalPrice": 1349.97,
         "DeliveryDate": "2023-08-12T00:00:00",
-        "Status": "Pending",
+        "Status": "PEN",
         "OrderItems": [
           {
             "ProductName": "Laptop",
@@ -90,7 +90,7 @@
         "OrderNumber": "SO1003",
         "TotalPrice": 1449.95,
         "DeliveryDate": "2023-08-15T00:00:00",
-        "Status": "Delivered",
+        "Status": "DLV",
         "OrderItems": [
           {
             "ProductName": "Smartwatch",
@@ -133,7 +133,7 @@
         "OrderNumber": "SO1004",
         "TotalPrice": 749.95,
         "DeliveryDate": "2023-08-18T00:00:00",
-        "Status": "In Progress",
+        "Status": "INP",
         "OrderItems": [
           {
             "ProductName": "Smartphone",
@@ -176,7 +176,7 @@
         "OrderNumber": "SO1005",
         "TotalPrice": 1099.95,
         "DeliveryDate": "2023-08-20T00:00:00",
-        "Status": "Cancelled",
+        "Status": "CAN",
         "OrderItems": [
           {
             "ProductName": "Laptop",

@@ -1,12 +1,13 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
-    "sap/ui/model/resource/ResourceModel"
+    "../model/formatter"
 ],
-    function (Controller, JSONModel) {
+    function (Controller, JSONModel, formatter) {
         "use strict";
 
         return Controller.extend("com.learn.ui5.sapui5basics.controller.OrdersPanel", {
+            formatter: formatter,
             onInit: function () {
                 // Set variables required on init of the view
                 var oViewModel = new JSONModel({
@@ -16,6 +17,7 @@ sap.ui.define([
                 this.getView().setModel(oViewModel, "view")
                 
             }
+            
         
         });
     });

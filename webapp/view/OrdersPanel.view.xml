@@ -21,6 +21,9 @@
                                 }"
                                 numberState="{= ${salesOrder>TotalPrice} > 1000 ? 'Error' : 'Success'}"
                                 class="customObjectListItem">
+                                <firstStatus>
+                                    <ObjectStatus id="orderObjectStatusView" text="{ path: 'salesOrder>Status', formatter: '.formatter.translateStatusText' }"/>
+                                </firstStatus>
                             </ObjectListItem>                        
                         </items>
                     </List>
