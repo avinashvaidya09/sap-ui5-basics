@@ -12,7 +12,10 @@
             </Panel>
         </content>
         <content>
-           <mvc:XMLView id="ordersPanelView" viewName="com.learn.ui5.sapui5basics.view.OrdersPanel"/>
+            <mvc:XMLView id="ordersPanelView" viewName="com.learn.ui5.sapui5basics.view.OrdersPanel"/>
+        </content>
+        <content>
+            <mvc:XMLView id="bpPanelView" viewName="com.learn.ui5.sapui5basics.view.BPPanel"/>
         </content>
     </Page>
 

@@ -29,6 +29,12 @@ server:
       afterMiddleware: compression
       configuration:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        backend:
+          - url: https://sandbox.api.sap.com
+            path: /s4hanacloud
+            apiHub: true
+            headers: 
+              APIKey: ABntfHpJar2VUOGTo6GjQD9uEQr2jQX8        
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:

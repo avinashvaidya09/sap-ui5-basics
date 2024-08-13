@@ -1,0 +1,11 @@
+<mvc:View controllerName="com.learn.ui5.sapui5basics.controller.BPPanel"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+            <Panel id="bpPanel" headerText="{i18n>bpPanelTitle}" class="sapUiResponsiveMargin" width="auto">
+                <content>
+                    <List id="businessPartnerList" items="{businessPartner>/}">
+                        <StandardListItem id="businessPartnerItem" title="{businessPartner>BusinessPartnerFullName}" description="{businessPartner>BusinessPartnerType}" />
+                    </List>
+                </content>
+            </Panel>
+</mvc:View>
