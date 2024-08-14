@@ -3,9 +3,37 @@
     xmlns="sap.m">
             <Panel id="bpPanel" headerText="{i18n>bpPanelTitle}" class="sapUiResponsiveMargin" width="auto">
                 <content>
-                    <List id="businessPartnerList" items="{businessPartner>/}">
-                        <StandardListItem id="businessPartnerItem" title="{businessPartner>BusinessPartnerFullName}" description="{businessPartner>BusinessPartnerType}" />
-                    </List>
+                    <Table id="businessPartnersList" items="{businessPartner>/}">
+                        <headerToolbar>
+                            <Toolbar id="bpToolBar">
+                                <Title id="bpToolBarTitle" text="{i18n>businessPartnerToolBarTitle}"></Title>
+                                <ToolbarSpacer id="ordersToolBarSpacer"/>
+                                <SearchField id="ordersSearchField" width="50%" search=".onFilterBusinessPartners" ></SearchField>
+                            </Toolbar>
+                        </headerToolbar>
+                        <columns>
+                            <Column id="bpId">
+                                <Text text="{i18n>bpId}"></Text>
+                            </Column>
+                            <Column id="bpCategory">
+                                <Text text="{i18n>bpCategory}"></Text>
+                            </Column>
+                            <Column id="bpName">
+                                <Text text="{i18n>bpName}"></Text>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem id="bpColumnListItem">
+                                <cells>
+                                    <Text text="{businessPartner>BusinessPartner}"></Text>
+                                    <Text text="{businessPartner>BusinessPartnerCategory}"></Text>
+                                    <Text text="{businessPartner>BusinessPartnerName}"></Text>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    
+                    
+                    </Table>
                 </content>
             </Panel>
 </mvc:View>

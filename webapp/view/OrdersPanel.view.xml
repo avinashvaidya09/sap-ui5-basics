@@ -3,7 +3,8 @@
     xmlns="sap.m">
             <Panel id="ordersPanel" headerText="{i18n>ordersPanelTitle}" class="sapUiResponsiveMargin" width="auto">
                 <content>
-                    <List id="ordersList" 
+                
+                    <Table id="ordersList" 
                         headerText="{i18n>ordersListTitle}"
                         class="saUiResponsiveMargin"
                         width="auto"
@@ -20,27 +21,31 @@
                                 <SearchField id="ordersSearchField" width="50%" search=".onFilterSalesOrders" ></SearchField>
                             </Toolbar>
                         </headerToolbar>
+                        <columns>
+                            <Column id="salesOrderID">
+                                <Text text="{i18n>salesOrderID}"></Text>
+                            </Column>
+                            <Column id="salesOrderStatus">
+                                <Text text="{i18n>salesOrderStatus}"></Text>
+                            </Column>
+                            <Column id="salesOrderPrice">
+                                <Text text="{i18n>salesOrderPrice}"></Text>
+                            </Column>
+                        </columns>
                         <items>
-                            <ObjectListItem id="ordersListItem" 
-                                title="{salesOrder>OrderNumber}"
-                                numberUnit="{view>/currency}"
-                                number="{
-                                    parts: [{path: 'salesOrder>TotalPrice'}, {path: 'view>/currency'}],
-                                    type: 'sap.ui.model.type.Currency',
-                                    formatOptions: {
-                                        showMeasure: false
-                                    }
-                                }"
-                                numberState="{= ${salesOrder>TotalPrice} > 1000 ? 'Error' : 'Success'}"
-                                class="customObjectListItem">
-                                <firstStatus>
-                                    <ObjectStatus id="orderObjectStatus" 
-                                    text="{ path: 'salesOrder>Status', formatter: '.formatter.translateStatusText' }"
-                                    title="STATUS"/>
-                                </firstStatus>
-                            </ObjectListItem>                        
+                            <ColumnListItem id="ordersListItem">
+                                <cells>
+                                    <Text text="{salesOrder>OrderNumber}"></Text>
+                                    <!--<Text text="{ path: 'salesOrder>Status', formatter: '.formatter.translateStatusText' }"></Text>-->
+                                    <ObjectStatus text="{ path: 'salesOrder>Status', formatter: '.formatter.translateStatusText' }"/>
+                                    <ObjectStatus text="{
+                                        parts: [{path: 'salesOrder>TotalPrice'}, {path: 'view>/currency'}],
+                                        type: 'sap.ui.model.type.Currency'
+                                    }" state="{= ${salesOrder>TotalPrice} > 1000 ? 'Error' : 'Success'}"/>
+                                </cells>
+                            </ColumnListItem>                        
                         </items>
-                    </List>
+                    </Table>
                 </content>
             </Panel>
 </mvc:View>

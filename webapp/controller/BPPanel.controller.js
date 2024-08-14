@@ -39,10 +39,10 @@ sap.ui.define([
                 var sQuery = oEvent.getParameter("query");
 
                 if (sQuery) {
-                    aFilter.push(new Filter("OrderNumber", FilterOperator.Contains, sQuery));
+                    aFilter.push(new Filter("BusinessPartner", FilterOperator.Contains, sQuery));
                 }
 
-                const oList = this.byId("ordersList");
+                const oList = this.byId("businessPartnersList");
                 const oBinding = oList.getBinding("items");
                 oBinding.filter(aFilter);
             }
