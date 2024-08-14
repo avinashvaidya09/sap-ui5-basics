@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function () {
 	"use strict";
 
 	sap.ui.require([
-		"comlearnui5/sap-ui5-basics/test/unit/AllTests"
+		"com/learn/ui5/sapui5basics/test/unit/model/formatter"
 	], function () {
 		QUnit.start();
 	});
