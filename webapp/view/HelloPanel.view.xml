@@ -1,13 +1,18 @@
 <mvc:View controllerName="com.learn.ui5.sapui5basics.controller.HelloPanel"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-            <Panel id="helloPanel" headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
-                <content>
-                    <HBox id="sayHello">
-                        <Input id="sayHelloInput" value="{/recepient/name}" valueLiveUpdate="true" width="90%"></Input>
-                        <Button id="sayHelloButton" text="{i18n>showHelloButtonText}" press="onPress" class="sapUiSmallMarginEnd"></Button>
-                        <Button id="helloDialogButton" text="{i18n>helloDialogButtonText}" press="onOpenDialog" class="sapUiSmallMarginEnd" icon="sap-icon://world"></Button>
-                    </HBox>
-                </content>
+            <Panel id="helloPanel" 
+                headerText="{i18n>helloPanelTitle}" 
+                class="sapUiResponsiveMargin" 
+                width="auto"
+                expandable="{device>/system/phone}"
+                expanded="{= !${device>/system/phone}}">
+                    <content>
+                        <HBox id="sayHello">
+                            <Input id="sayHelloInput" value="{/recepient/name}" valueLiveUpdate="true" width="90%"></Input>
+                            <Button id="sayHelloButton" text="{i18n>showHelloButtonText}" press="onPress" class="sapUiSmallMarginEnd" ></Button>
+                            <Button id="helloDialogButton" text="{i18n>helloDialogButtonText}" press=".onOpenDialog" class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop" icon="sap-icon://world"></Button>
+                        </HBox>
+                    </content>
             </Panel>
 </mvc:View>
