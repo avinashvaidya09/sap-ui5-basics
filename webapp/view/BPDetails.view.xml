@@ -1,0 +1,44 @@
+<mvc:View
+    controllerName="com.learn.ui5.sapui5basics.controller.BPDetails"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page
+        id="detailsPage"
+        title="{i18n>detailsPage}"
+        titleAlignment="Center"
+        showNavButton="true"
+        navButtonPress=".onNavBack">
+        <Panel
+            id="bpAddressPanel"
+            headerText="{i18n>bpAddressPanelTitle}"
+            class="sapUiResponsiveMargin"
+            width="auto">
+            <content>
+            <VBox>
+                <HBox>
+                    <Text text="Business Partner ID:" width="10rem" />
+                    <Text text="{businessPartnerAddress>/BusinessPartner}" />
+                </HBox>
+                <HBox>
+                    <Text text="Address ID:" width="10rem" />
+                    <Text text="{businessPartnerAddress>/AddressID}" />
+                </HBox>
+                <HBox>
+                    <Text text="Region:" width="10rem" />
+                    <Text text="{businessPartnerAddress>/Region}" />
+                </HBox>
+                <HBox>
+                    <Text text="City Name:" width="10rem" />
+                    <Text text="{businessPartnerAddress>/CityName}" />
+                </HBox>
+                <HBox>
+                    <Text text="Postal Code:" width="10rem" />
+                    <Text text="{businessPartnerAddress>/PostalCode}" />
+                </HBox>
+            </VBox>
+                
+            </content>
+        </Panel>
+    </Page>
+</mvc:View>

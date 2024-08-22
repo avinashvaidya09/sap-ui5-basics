@@ -23,7 +23,7 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem id="bpColumnListItem">
+                            <ColumnListItem id="bpColumnListItem" type="Navigation" press="loadAddressDetails">
                                 <cells>
                                     <Text text="{businessPartner>BusinessPartner}"></Text>
                                     <Text text="{businessPartner>BusinessPartnerCategory}"></Text>

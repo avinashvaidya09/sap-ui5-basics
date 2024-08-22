@@ -114,6 +114,13 @@
                     "target": [
                         "TargetMain"
                     ]
+                },
+                {
+                    "pattern": "bpDetails/{businessPartnerId}",
+                    "name": "RouteBPDetails",
+                    "target": [
+                        "TargetBPDetails"
+                    ]
                 }
             ],
             "targets": {
@@ -123,6 +130,12 @@
                     "clearControlAggregation": false,
                     "viewId": "Main",
                     "viewName": "Main"
+                },
+                "TargetBPDetails": {
+                    "viewId": "BPDetails",
+                    "viewName": "BPDetails",
+                    "viewType": "XML",
+                    "transition": "slide"
                 }
             }
         },

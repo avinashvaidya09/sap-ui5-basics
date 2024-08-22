@@ -7,7 +7,7 @@ sap.ui.define([
     function (Controller, JSONModel, Filter, FilterOperator) {
         "use strict";
 
-        return Controller.extend("com.learn.ui5.sapui5basics.controller.OrdersPanel", {
+        return Controller.extend("com.learn.ui5.sapui5basics.controller.BPPanel", {
             onInit: function () {
                 // Set variables required on init of the view
                 this.loadBusinessPartnerData();
@@ -45,6 +45,14 @@ sap.ui.define([
                 const oList = this.byId("businessPartnersList");
                 const oBinding = oList.getBinding("items");
                 oBinding.filter(aFilter);
+            },
+            loadAddressDetails: function (oEvent) {
+                
+                var sBusinessPartnerId = oEvent.getSource().getBindingContext("businessPartner").getProperty("BusinessPartner");
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter.navTo("RouteBPDetails", {
+                    businessPartnerId: sBusinessPartnerId
+                });
             }
             
         
