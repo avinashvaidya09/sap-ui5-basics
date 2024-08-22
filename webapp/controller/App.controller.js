@@ -7,6 +7,7 @@ sap.ui.define(
   
       return BaseController.extend("com.learn.ui5.sapui5basics.controller.App", {
         onInit: function() {
+          this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
         }
       });
     }

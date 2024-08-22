@@ -5,9 +5,10 @@ sap.ui.define([
     "sap/ui/core/UIComponent",
     "com/learn/ui5/sapui5basics/model/models",
     "sap/ui/model/json/JSONModel",
-    "./controller/HelloDialog"
+    "./controller/HelloDialog",
+    "sap/ui/Device"
 ],
-    function (UIComponent, models, JSONModel, HelloDialog) {
+    function (UIComponent, models, JSONModel, HelloDialog, Device) {
         "use strict";
 
         return UIComponent.extend("com.learn.ui5.sapui5basics.Component", {
@@ -53,6 +54,9 @@ sap.ui.define([
             exit: function () {
                 this._helloDialog.destroy();
                 delete this._helloDialog;
+            },
+            getContentDensityClass : function () {
+                return Device.support.touch ? "sapUiSizeCozy" : "sapUiSizeCompact";
             }
 
         });
