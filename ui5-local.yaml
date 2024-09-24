@@ -34,7 +34,7 @@ server:
             path: /s4hanacloud
             apiHub: true
             headers: 
-              APIKey: ABntfHpJar2VUOGTo6GjQD9uEQr2jQX8        
+              APIKey: <API hub key>        
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
